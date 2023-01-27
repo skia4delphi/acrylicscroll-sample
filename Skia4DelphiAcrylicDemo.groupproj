@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{64C1F643-B187-4AD8-862F-287585F177F1}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Projects\RAD Studio 11 Alexandria\NetflixAcrylic.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="NetflixAcrylic">
+        <MSBuild Projects="Projects\RAD Studio 11 Alexandria\NetflixAcrylic.dproj"/>
+    </Target>
+    <Target Name="NetflixAcrylic:Clean">
+        <MSBuild Projects="Projects\RAD Studio 11 Alexandria\NetflixAcrylic.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NetflixAcrylic:Make">
+        <MSBuild Projects="Projects\RAD Studio 11 Alexandria\NetflixAcrylic.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="NetflixAcrylic"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="NetflixAcrylic:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="NetflixAcrylic:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,15 @@
+object AcrylicFrame: TAcrylicFrame
+  Size.Width = 465.000000000000000000
+  Size.Height = 97.000000000000000000
+  Size.PlatformDefault = False
+  object rctBackground: TRectangle
+    Align = Contents
+    Fill.Color = xFF191919
+    Locked = True
+    Opacity = 0.699999988079071000
+    Size.Width = 465.000000000000000000
+    Size.Height = 97.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+end
