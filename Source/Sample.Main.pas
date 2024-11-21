@@ -9,7 +9,7 @@ uses
   FMX.StdCtrls, FMX.Layouts,
 
   { Skia }
-  Skia, Skia.FMX,
+  System.Skia, FMX.Skia,
 
   { Sample }
   Sample.Acrylic, FMX.Effects;

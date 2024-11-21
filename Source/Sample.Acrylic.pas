@@ -30,7 +30,7 @@ implementation
 
 uses
   { Skia }
-  Skia, Skia.FMX.Graphics;
+  System.Skia, FMX.Skia.Canvas;
 
 { TRectangle }
 
